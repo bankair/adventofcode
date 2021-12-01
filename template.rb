@@ -1,7 +1,6 @@
-require 'byebug'
+# frozen_string_literal: true
 
-def process(input)
-end
+def process(input) end
 
 def test(input, expected)
   actual = process(input)
@@ -13,8 +12,8 @@ def test(input, expected)
   puts "SUCCESS => #{actual.inspect}"
 end
 
-test(<<TEST, 42).inspect
-My test input
+test(<<~TEST, :replace_me_by_expected_result)
+  My test input
 TEST
 
 # puts process(File.read('input'))

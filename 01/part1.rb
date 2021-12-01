@@ -1,1 +1,4 @@
-puts File.readlines('input').map(&:to_i).combination(2).find { |a, b| a + b == 2020 }.reduce(:*)
+# frozen_string_literal: true
+
+input = File.readlines('input').map(&:to_i)
+puts(input[1..-1].zip(input[0..-2]).count { |a, b| a > b })
