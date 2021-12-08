@@ -16,4 +16,4 @@ test(<<~TEST, :replace_me_by_expected_result)
   My test input
 TEST
 
-# puts process(File.read('input'))
+puts process(File.read('input'))
